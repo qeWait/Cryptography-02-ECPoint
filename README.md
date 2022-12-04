@@ -7,7 +7,7 @@
 
 Скрипт який виконує завдання: `tasks.py`
 
-- [ ] `BasePointGGet`
+- [ ] `BasePointGGet` - не зміг зрозуміти що потрібно зробити і вивести
 - [x] `ECPointGen` - виконується при ініціалізації класу
 - [x] `IsOnCurveCheck`
 - [x] `AddECPoints`
