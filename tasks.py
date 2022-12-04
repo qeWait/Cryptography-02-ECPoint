@@ -3,6 +3,7 @@ from ECurve import ECurve, ECPoint
 
 curve = ECurve(3, 4)
 print(curve.EquationToString())
+curve.PrintEquation()
 
 point1 = ECPoint(0, 2)
 point1.PrintECPoint()
