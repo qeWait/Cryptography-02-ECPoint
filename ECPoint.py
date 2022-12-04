@@ -16,6 +16,8 @@ class ECPoint:
         return ECPoint(int(x), int(y))
 
     def ScalarMult(self, n: int):
+        if (n < 0 or n > 9):
+            raise ValueError(f'{n} не є натуральним числом.')
         x = self.x * n
         y = self.y * n
 
