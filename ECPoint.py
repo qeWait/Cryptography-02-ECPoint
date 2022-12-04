@@ -20,16 +20,16 @@ class ECPoint:
         x = ( (3*self.x**2 + equation['a']) / (2*self.y) )**2 - 2*self.x
         y = -self.y + ( (3*self.x**2 + equation['a']) / (2*self.y) ) * (self.x - x)
 
-        return ECPoint(x, y)
+        return ECPoint(int(x), int(y))
 
     def ScalarMult(self, n: int):
         x = self.x * n
         y = self.y * n
 
-        return ECPoint(x, y)
+        return ECPoint(int(x), int(y))
 
     def IsOnCurveCheck(self):
-        return True if self.y**2 == equation['a'] * self.x + equation['b'] else False
+        return self.y**2 == int((self.x**3 + equation['a']*self.x + equation['b']))
 
 def AddECPoints(P: ECPoint, Q: ECPoint) -> ECPoint:
     m = (P.y - Q.y) / (P.x - Q.x)
@@ -37,4 +37,4 @@ def AddECPoints(P: ECPoint, Q: ECPoint) -> ECPoint:
     x = m**2 - P.x - Q.x
     y = P.y + m * (x - P.x)
 
-    return ECPoint(x, y)
+    return ECPoint(int(x), int(y))

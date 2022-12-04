@@ -1,9 +1,12 @@
-from ECPoint import ECPoint, AddECPoints
+import ECPoint as ECP
 
-point1 = ECPoint(3, 4)
-point2 = ECPoint(1, 0)
+point1 = ECP.ECPoint(0, 2)
+point1.PrintECPoint()
 
-point3 = AddECPoints(point1, point2)
+point2 = ECP.ECPoint(-1, 0)
+point2.PrintECPoint()
+
+point3 = ECP.AddECPoints(point1, point2)
 point3.PrintECPoint()
 
 point4 = point3.DoubleECPoint()
