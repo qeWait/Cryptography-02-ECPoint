@@ -24,6 +24,6 @@ point4 = point3.DoubleECPoint(curve)
 point4.PrintECPoint()
 print(point4.ECPointToString(), "- точка яка належить еліптичній кривій" if point4.IsOnCurveCheck(curve) else "- точка яка не належить еліптичній кривій")
 
-point5 = point3.ScalarMult(3)
+point5 = point3.ScalarMult(5)
 point5.PrintECPoint()
 print(point5.ECPointToString(), "- точка яка належить еліптичній кривій" if point5.IsOnCurveCheck(curve) else "- точка яка не належить еліптичній кривій")
