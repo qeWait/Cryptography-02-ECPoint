@@ -5,6 +5,9 @@ curve = ECurve(3, 4)
 print(curve.EquationToString())
 curve.PrintEquation()
 
+baseGpoint = curve.BasePointGGet()
+baseGpoint.PrintECPoint()
+
 point1 = ECPoint(0, 2)
 point1.PrintECPoint()
 print(point1.ECPointToString(), "- точка яка належить еліптичній кривій" if point1.IsOnCurveCheck(curve) else "- точка яка не належить еліптичній кривій")

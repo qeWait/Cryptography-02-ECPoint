@@ -25,4 +25,7 @@ class ECurve:
         print(self.EquationToString())
 
     def BasePointGGet(self) -> ECPoint:
-        pass
+        x = (self.a**self.b * self.b**self.a) / self.b * self.a + self.a**self.a
+        y = (self.b**self.a * self.a**self.b) * self.b + self.a * self.b**self.a
+
+        return ECPoint(int(x), int(y))
