@@ -18,9 +18,6 @@ class ECurve:
 
         return ECPoint(int(x), int(y))
 
-    def BasePointGGet(self):
-        int((1**3 + self.a*1 + self.b)**(1/2))
-
     def EquationToString(self):
         return f'Рівняння еліптичної кривої: y^2 = x^3 + {self.a}x + {self.b}'
 

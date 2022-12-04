@@ -7,7 +7,7 @@
 
 Скрипт який виконує завдання: `tasks.py`
 
-- [x] `BasePointGGet` - в класі ECurve
+- [ ] `BasePointGGet`
 - [x] `ECPointGen` - виконується при ініціалізації класу
 - [x] `IsOnCurveCheck`
 - [x] `AddECPoints`
