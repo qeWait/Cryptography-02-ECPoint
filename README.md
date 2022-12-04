@@ -1,8 +1,7 @@
 # Cryptography-02-ECPoint
 
 В тесті використовується наступне еліптичне рівняння кривої: y^2 = x^3 + 3x + 4
-Звірити результат виконання можна з цим онлайн-ресурсом
-<iframe src="https://www.desmos.com/calculator/qghal1ypzt?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+Звірити результат виконання можна з цим онлайн-ресурсом https://www.desmos.com/calculator/3ah3mmpiuk
 
 Скрипт який виконує завдання: `tasks.py`
 
