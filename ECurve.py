@@ -23,3 +23,6 @@ class ECurve:
 
     def PrintEquation(self) -> None:
         print(self.EquationToString())
+
+    def BasePointGGet(self) -> ECPoint:
+        pass
